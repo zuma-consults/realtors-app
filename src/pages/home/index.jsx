@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import PropertySearchForm from '../../components/Filters'
+import Propertytypes from '../../components/Propertytypes'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <NavBar/>
         <Hero/>
         <PropertySearchForm/>
+        <Propertytypes/>
     </div>
   )
 }
