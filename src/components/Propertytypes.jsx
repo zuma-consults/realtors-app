@@ -7,7 +7,7 @@ import VillaIcon from "@mui/icons-material/Villa";
 
 function Propertytypes() {
   return (
-    <div className="grid py-5 mb-5 px-20">
+    <div className="grid py-10 mb-10 px-20">
       <div className="w-full flex items-center justify-center py-10">
         <h1 className="flex items-center text-4xl font-bold">Property Types</h1>
       </div>
