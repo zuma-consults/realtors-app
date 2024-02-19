@@ -12,7 +12,7 @@ function PropertyListing() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 p-5 rounded-lg">
+      <div className="grid grid-cols-3 gap-5 p-5 rounded-lg">
         <ListCard />
         <ListCard />
         <ListCard />

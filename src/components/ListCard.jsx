@@ -14,7 +14,7 @@ export default function ListCard() {
 
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className='w-full'>
       <CardMedia
         component="img"
         height="194"
