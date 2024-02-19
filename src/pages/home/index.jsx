@@ -4,6 +4,7 @@ import Hero from '../../components/Hero'
 import PropertySearchForm from '../../components/Filters'
 import Propertytypes from '../../components/Propertytypes'
 import PropertyListing from '../../components/PropertyListing'
+import AboutSection from '../../components/AboutSection'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <PropertySearchForm/>
         <Propertytypes/>
         <PropertyListing/>
+        <AboutSection/>
     </div>
   )
 }
