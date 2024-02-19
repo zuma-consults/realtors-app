@@ -3,6 +3,7 @@ import NavBar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import PropertySearchForm from '../../components/Filters'
 import Propertytypes from '../../components/Propertytypes'
+import PropertyListing from '../../components/PropertyListing'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
         <Hero/>
         <PropertySearchForm/>
         <Propertytypes/>
+        <PropertyListing/>
     </div>
   )
 }
