@@ -35,16 +35,40 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="flex items-center gap-10 justify-end w-full">
-          <Link to="/about" className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
+          <Link
+            to="/about"
+            className={
+              isLinkActive("about")
+                ? "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-darkgreen "
+                : "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text"
+            }
+          >
             About
           </Link>
-          <Link to="/property-list" className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
+          <Link
+            to="/property-list"
+            className={
+              isLinkActive("property-list")
+                ? "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-darkgreen"
+                : "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text"
+            }
+          >
             Property List
           </Link>
-          <Link to="/contact" className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
+          <Link
+            to="/contact"
+            className={
+              isLinkActive("contact")
+                ? "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-darkgreen"
+                : "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text"
+            }
+          >
             Contact
           </Link>
-          <Link to="/add-property" className="cursor-pointer bg-ra-darkgreen text-lg  font-semibold text-white p-2 rounded-lg">
+          <Link
+            to="/add-property"
+            className="cursor-pointer bg-ra-darkgreen text-lg  font-semibold text-white p-2 rounded-lg"
+          >
             Add Property
           </Link>
         </div>
