@@ -22,7 +22,8 @@ function Hero() {
       <div className="order-1 md:order-2 h-[50vh] md:h-full w-full relative bg-black" data-aos="fade-left">
         <Carousel
           className="h-full w-full absolute top-0 left-0"
-          interval={500}
+          infiniteLoop={true}
+          interval={2000}
           autoPlay={true}
           showArrows={false}
           showThumbs={false}
