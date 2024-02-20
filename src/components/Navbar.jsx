@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -12,6 +15,10 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const isLinkActive = (path) => {
+    return location.pathname.includes(path);
+  };
 
   return (
     <div className="navbar  top-0 right-0 left-0">
@@ -28,21 +35,18 @@ const NavBar = () => {
           </span>
         </div>
         <div className="flex items-center gap-10 justify-end w-full">
-          <span className="cursor-pointer hover:text-ra-darkgreen text-lg font-semibold text-ra-text">
-            Home
-          </span>
-          <span className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
+          <Link to="/about" className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
             About
-          </span>
-          <span className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
+          </Link>
+          <Link to="/property-list" className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
             Property List
-          </span>
-          <span className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
+          </Link>
+          <Link to="/contact" className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
             Contact
-          </span>
-          <span className="cursor-pointer bg-ra-darkgreen text-lg  font-semibold text-white p-2 rounded-lg">
+          </Link>
+          <Link to="/add-property" className="cursor-pointer bg-ra-darkgreen text-lg  font-semibold text-white p-2 rounded-lg">
             Add Property
-          </span>
+          </Link>
         </div>
       </div>
     </div>
