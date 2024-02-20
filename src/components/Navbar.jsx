@@ -30,9 +30,9 @@ const NavBar = () => {
         }
       >
         <div className="flex items-center justify-start cursor-pointer w-full">
-          <span className="text-ra-darkgreen font-bold text-2xl">
+          <Link to="/" className="text-ra-darkgreen font-bold text-2xl">
             Realtors App
-          </span>
+          </Link>
         </div>
         <div className="flex items-center gap-10 justify-end w-full">
           <Link to="/about" className="cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text">
