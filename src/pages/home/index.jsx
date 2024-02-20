@@ -5,6 +5,7 @@ import PropertySearchForm from '../../components/Filters'
 import Propertytypes from '../../components/Propertytypes'
 import PropertyListing from '../../components/PropertyListing'
 import AboutSection from '../../components/AboutSection'
+import ContactCard from '../../components/ContactCard'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Propertytypes/>
         <PropertyListing/>
         <AboutSection/>
+        <ContactCard/>
     </div>
   )
 }

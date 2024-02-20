@@ -14,7 +14,7 @@ const PropertySearchForm = () => {
 
   return (
     <div className=" flex items-center justify-center bg-ra-darkgreen py-10 px-20">
-      <form className="grid grid-cols-4 gap-3 w-full">
+      <form className="grid md:grid-cols-4 gap-3 w-full">
         <input
           type="text"
           placeholder="Search"
@@ -46,7 +46,7 @@ const PropertySearchForm = () => {
         <button
           type="button"
           onClick={handleSearch}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-4 rounded-md"
+          className="bg-ra-text hover:bg-black text-white font-bold py-4 px-4 rounded-md"
         >
           Search
         </button>

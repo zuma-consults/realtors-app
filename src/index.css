@@ -39,3 +39,15 @@ body {
   clip-path: polygon(0 0, 32% 0, 100% 100%, 0% 100%);
 }
 
+.carousel {
+  height: 100%; /* 100% of the viewport height */
+}
+
+.carousel div{
+  height: 100%; /* 100% of the viewport height */
+}
+
+.carousel div img{
+  height: 90vh; /* 100% of the viewport height */
+  
+}

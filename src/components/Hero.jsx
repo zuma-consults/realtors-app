@@ -4,8 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 
 function Hero() {
   return (
-    <div className="h-[90vh] w-full grid grid-cols-2">
-      <div className="px-[150px] h-full flex flex-col items-start justify-center gap-10">
+    <div className=" h-full md:h-[90vh] w-full grid grid-cols-1 md:grid-cols-2">
+      <div className="order-2 md:order-1 px-4  py-10 md:px-[150px] h-full flex flex-col items-start justify-center gap-10" data-aos="fade-right">
         <span className="text-4xl font-[900]  text-ra-text">
           Find A <span className="text-ra-darkgreen">Perfect Home</span> To Live
           With Your Family
@@ -15,22 +15,23 @@ function Hero() {
           rebum ipsum et diam justo clita et kasd rebum sea elitr.
         </p>
 
-        <button className="bg-ra-darkgreen w-[40%] h-[50px] text-white font-bold p-5 flex items-center justify-center rounded shadow">
+        <button className="bg-ra-darkgreen w-[40%] h-[70px] text-white font-bold p-5 flex items-center justify-center rounded shadow">
           Get Started
         </button>
       </div>
-      <div className="h-full w-full relative bg-black">
+      <div className="order-1 md:order-2 h-[50vh] md:h-full w-full relative bg-black" data-aos="fade-left">
         <Carousel
           className="h-full w-full absolute top-0 left-0"
+          interval={500}
           autoPlay={true}
           showArrows={false}
           showThumbs={false}
           showStatus={false}
           dynamicHeight={false}
         >
-          <div className="h-full w-full">
+          <div className="w-full">
             <img
-              className="h-full w-full object-cover"
+              className="w-full object-cover"
               src="/house1.jpg"
               alt="Carousel Image"
             />
