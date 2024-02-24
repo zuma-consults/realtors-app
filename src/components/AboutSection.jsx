@@ -7,7 +7,7 @@ function AboutSection() {
       <div className="h-full w-full relative" data-aos="fade-right">
         <div className="image h-full w-full bg-ra-darkgreen"></div>
         <img
-          src="/house1.jpg"
+          src="/house6.jpg"
           alt=""
           className="absolute md:top-10 md:left-10 top-5 left-5 h-[90%] md:h-[85%] w-[90%] md:w-full"
         />

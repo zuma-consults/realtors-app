@@ -36,6 +36,16 @@ const NavBar = () => {
         </div>
         <div className="flex items-center gap-10 justify-end w-full">
           <Link
+            to="/home"
+            className={
+              isLinkActive("/home")
+                ? "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-darkgreen "
+                : "cursor-pointer hover:text-ra-darkgreen text-lg  font-semibold text-ra-text"
+            }
+          >
+            Home
+          </Link>
+          <Link
             to="/about"
             className={
               isLinkActive("about")
@@ -64,12 +74,6 @@ const NavBar = () => {
             }
           >
             Contact
-          </Link>
-          <Link
-            to="/add-property"
-            className="cursor-pointer bg-ra-darkgreen text-lg  font-semibold text-white p-2 rounded-lg"
-          >
-            Add Property
           </Link>
         </div>
       </div>

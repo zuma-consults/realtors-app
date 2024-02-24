@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
@@ -9,23 +9,22 @@ import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 
-export default function ListCard() {
+const StyledCard = styled(Card)({
+  width: '100%',
+  height: "100%",
+});
 
-
-
+const ListCard = ({ image, title, description }) => {
   return (
-    <Card className='w-full'>
+    <StyledCard>
       <CardMedia
         component="img"
-        height="194"
-        image="/house1.jpg"
-        alt="Paella dish"
+        image={image}
+        alt={title}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+          {description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -36,6 +35,8 @@ export default function ListCard() {
           <ShareIcon />
         </IconButton>
       </CardActions>
-    </Card>
+    </StyledCard>
   );
-}
+};
+
+export default ListCard;
